@@ -1,0 +1,75 @@
+{
+  "name": "ex-robot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A modern, sleek AI assistant desktop application with fluid UI/UX",
+  "author": {
+    "name": "Bruce Wong",
+    "email": "wwsb196-ai@github.com",
+    "url": "https://github.com/wwsb196-ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "react",
+    "typescript",
+    "ai-assistant",
+    "desktop-app",
+    "framer-motion"
+  ],
+  "homepage": "https://github.com/wwsb196-ai/ex-robot#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwsb196-ai/ex-robot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wwsb196-ai/ex-robot/issues"
+  },
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
+    "electron": "electron .",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "electron-builder",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.292.0",
+    "clsx": "^2.0.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "@vitejs/plugin-react": "^4.1.1",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8": "^27.0.0",
+    "electron-builder": "^24",
+    "electron.2.2.9.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vitest": "^0.34.6",
+    "wait-on": "^7.2.0"
+  }
+}
